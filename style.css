@@ -1,0 +1,344 @@
+/*Fuente de todo el body en todas las pag*/
+body{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+/*Encabezado*/
+    header{
+        background-color: #bbbbbb;
+        padding: 20px 0;
+    }
+
+/*Clase del div (div encapsula H1 y Logo*/
+    .caja{
+        width: 940px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+/*Barra de navegación*/    
+    nav{
+        position: absolute;
+        top: 110px;
+        right: 0px;
+    }
+
+/*Lista-HOME,PRODUCTOS,CONTACTOS*/
+    nav li{
+        display:inline;
+        margin: 0 0 0 15px;
+        
+    }
+
+/*Texto de la lista*/
+    nav a{
+        text-transform: uppercase; /*transforma texto a mayuscula*/
+        color: #000000;
+        font-weight: bold; /*texto en negrita*/
+        font-size: 22px;
+        text-decoration: none;/*saca subrayado al texto*/
+    }
+
+/* Movimiento cuanto pasa el mouse por arriba del home,productos,contacto*/    
+    nav a:hover{
+        color: azure;
+        text-decoration: underline;
+    }
+
+/*Lista de los productos*/    
+    .productos{
+        width: 940px;
+        margin: 0 auto;
+        padding: 50px;
+    }
+
+/*Cuadro de las opciones de productos*/    
+    .productos li{
+        display: inline-block;
+        text-align: center;
+        width: 30%;
+        vertical-align: top;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        box-sizing: border-box;/*para q no supere el 100% de la pag*/
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
+
+/*Movimiento de los cuadros cuando pasas el mouse por arriba*/    
+    .productos li:hover{
+        border-color: #c78c19;
+    }
+    
+/*Cambia de color cuando haces click en los cuadros*/    
+    .productos li:active{
+        border-color:green;
+    }
+
+/*Titulo de los cuadros*/ 
+    .productos h2{
+        font-size: 30px;
+        font-weight:bold ;
+    }
+
+/*Aumenta de tamaño los titulos de los cuadros cuando pasas el mouse x arriba*/       
+    .productos li:hover h2{
+        font-size: 33px;
+    }
+
+/*Descripción de los cuadros*/    
+    .producto-descripcion{
+        font-size: 18px;
+    }
+
+/*Precio de los cuadros*/    
+    .producto-precio{
+        font-size:20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+/*Pie de pagina*/    
+    footer{
+        text-align: center;
+        background: url(img/bg.jpg);
+        padding: 40px;
+    }
+
+/*Texto del pie de pagina*/    
+    .copyright{
+        color: white ;
+        font-size: 13px;
+        margin: 20px;
+    }
+
+/*Formulario*/    
+     form{
+        margin: 40px 15px;
+       
+    }
+
+/* Texto arriba del rectangulo para completar*/    
+    form label, form legend{
+        display:block;
+        font-size: 20px;
+        margin: 0 10px;
+    }
+
+/*Rectangulo para completar*/    
+    .input-padron{
+        display: block;
+        margin:0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+    }
+
+/*Espacio ente lineas ¿Cómo te gustaria...?*/    
+    fieldset{
+        line-height: 2em;
+    }
+
+/* Opción de resivir novedades*/   
+    .checkbox{
+        margin: 20px 0;
+    }
+
+/*Boton enviar*/    
+    .enviar{
+        width: 40%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight:bold;
+        color: white;
+        background: orange;
+        border: none;
+        border-radius: 5px;
+        transition: 1s all;
+        cursor: pointer; /*cambia cursor por manito*/
+    }
+
+/*Botón enviar cambia de color cuando pasa el mmouse por arriba*/    
+    .enviar:hover{
+        background: orangered;
+        transform: scale(1.2);/*Aumenta de tamaño cuando paso el mouse x arriba*/
+    }
+
+/*Tabla de días y horarios*/    
+    table{
+        margin: 40px 40px ;
+    }
+
+/*Encabezado de la table*/
+    thead{
+        background:#555555;
+        color: white;
+        font-weight: bold;
+    }
+
+/*Haciendo las líneas*/    
+    td,th{
+        border: 1px solid #000000;
+        padding: 8px 15px;
+    }
+
+/* Inicia el Css para nuestra home*/
+/*Foto de la barbería*/
+    .banner{
+        width: 100%;
+    }
+   
+/*Titulo del texto*/    
+    .titulo-principal{
+        text-align: center;
+        font-size: 2em;
+        margin: 0 0 1em;
+        clear: left;/* Cualquier configuracion q venga despues del titulo a la izq. q me lo limpie*/
+    }
+
+/*Primer section*/
+    .principal{
+        padding: 3em;
+        background:#fefefe;
+        width: 940px;
+        margin: 0 auto;
+    }
+
+/*Texto-parrafo*/    
+    .principal p{
+         margin: 0 0 1em;
+    }
+
+/*Negrita en el texto y forma de fuente de algunas palabras*/
+    .principal strong{
+        font-weight: bold;
+    }
+
+    .principal em{
+        font-style: italic;
+    }
+
+/*magen utensillos*/
+    .utensillos{
+        width: 120px;
+        float: left; /*ponel el texto a la izq. de la img*/
+        margin: 0 20px 20px 0;
+    }
+
+/*Imagen mapa*/
+    .mapa{
+        padding: 3em 0;
+        background:linear-gradient(#fefefe,#888888);
+    } 
+    
+/*Texto del mapa*/
+    .mapa p{
+        margin:0 0 2em;
+        text-align: center;
+    }
+
+/*Mapa*/    
+    .mapa-contenido{
+        width: 940px;
+        margin: 0 auto;
+    }
+
+/*Segundo section*/
+    .diferenciales{
+        padding: 3em;
+        background: #888888;
+    }
+
+/*Texto diferenciales*/
+    .contenido-diferenciales{
+        width: 640px;
+        margin: 0 auto;
+    }
+
+    .lista-diferenciales{
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    .items{
+        line-height: 1.5;
+    }
+
+/*Aplicamos estrella a nuestros items diferenciales*/
+    .items:before{
+       content: "★";  
+    }   
+
+/*Aplicamos negrita al primer items,pseudo-clase,:nth-child(1)(primer hijo)*/
+    .items:first-child{
+        font-weight: bold;
+    }
+
+/* Imagen diferenciales*/
+    .imagen-diferenciales{
+        width: 60%;
+        transition: 400ms;
+        box-shadow:10px 10px 30px 15px #000000 ;
+    } 
+
+/*Opacidad de la imag diferenciales cuando el mouse pase x arriba*/
+.imagen-diferenciales:hover{
+    opacity:0.3 ;
+}    
+    
+/*Video*/    
+    .video{
+        width:560px;
+        margin: 1em auto;
+    }
+
+/*Medias query, para ajustar mi pag HOME a dispositivos moviles*/    
+    @media screen and (max-width:480px) {
+        h1{ /*logo*/
+            text-align: center;
+        }
+
+        nav{/*home,producto,contacto*/
+            position: static;       
+        }
+
+        nav,form,.caja,.principal,.mapa-contenido,.contenido-diferenciales,.video,.productos,.producto-descripcion,.producto-precio{ /*resto del contenido de la home*/
+            width: auto;
+        }
+
+        .lista-diferenciales,.imagen-diferenciales{
+            width: 100%;
+        }
+        
+        /*Medias query, para ajustar pag PRODUCTOS a dispositivos moviles*/  
+
+        .productos{
+            display: flex;
+            flex-direction:column;
+        }
+    
+        .productos li{
+            width: 95%;
+        }
+
+        /*Medias query, para ajustar pag CONTACTO a dispositivos moviles*/ 
+    
+        form{
+            margin: 1em;
+        }
+    
+        .input-padron{
+            width: 80%
+        }
+    
+        .enviar{
+            width: 95%;
+        }
+    }
+
+   
+

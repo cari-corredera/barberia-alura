@@ -1,0 +1,53 @@
+/*me pinta toda la pag*/
+.titulo-principal{
+    padding-left: 15px;
+}
+
+#banner{
+    width: 100%;
+}
+
+.principal{
+    background: #cccccc;
+    padding:20px ;
+}
+
+.titulo-centralizado{
+    text-align:center;
+}
+
+/*si yo pongo el backgroun acá,me pinta en franja*/
+p{
+    text-align: center;
+   
+}
+
+/*pongo tambien la etiq em para decirle que solo cambie el color al strong del 2 parrafo y no me tome el primer strong*/
+ em strong{
+    color: red;
+}
+
+#mision{
+    font-size: 20px;
+}
+
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+
+.items{
+    font-style: italic;
+
+}
+
+/*ul es una etiq es bloque y p/ poder modificarlo en sus 4 lados usamos el diplay*/
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.imagenDiferenciales{
+    width:50%;
+}
